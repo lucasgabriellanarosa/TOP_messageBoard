@@ -1,7 +1,8 @@
 const { Router } = require("express");
+const indexRouter = Router();
+
 const getMessages = require('../controllers/messagesController');
 
-const indexRouter = Router();
 
 indexRouter.get("/", (req, res) => {
     const messages = getMessages();
